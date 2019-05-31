@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Journal</title>
+    <link rel="stylesheet" href="selectors.css" />
+  </head>
+
+  <body>
+    <p><a href="https://github.com/nashville-software-school/client-side-mastery" target="blank">Criteria</a></p>
+   
+      <fieldset class="drop">
+        <select onchange="location.href=this.value">
+          <option value="#d-one">Week One</option>
+          <option value="#d-one">Day One</option>
+          <option value="#d-two">Day Two</option>
+          <option value="#d-three">Day Three</option>
+          <option value="#d-four">Day Four</option>
+          <option value="#d-five">Day Five</option>
+        </select>
+        <select onchange="location.href=this.value">
+          <option value="#d-six">Week Two</option>
+          <option value="#d-six">Day Six</option>
+          <option value="#d-seven">Day Seven</option>
+          <option value="#d-eight">Day Eight</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </fieldset>
+      
+    <nav id="top">
+      <ul class="parent">
+        <li class="hvr-overline-from-left"><a href="#d-one">Week One</a></li>
+        <li class="hvr-overline-from-left"><a href="#d-six">Week Two</a></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    
+    <article class="">
+      <h1 id="d-one">Day 1</h1>
+      <div class="child">
+        <section class="sectionflex">
+            <ul>
+                <li>Introductions</li>
+                <li>Downloads</li>
+            </ul>
+        </section> 
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-two">Day 2</h1>
+      <div class="child">
+        <section class="sectionflex">
+            <ol>
+                <li>cd into workspace</li>
+                <li>mg directory</li>
+                <li>touch index.html</li>
+                <li>"code ." opens VS </li>
+                <li>"!" &#60;tab&#62;</tab></li>
+                <li>http-server</li>
+                <li>open dev tools</li>
+            </ol>
+        </section>
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-three">Day 3</h1>
+      <div class="child">
+        <section class="sectionflex">
+          <h3><em>Specificity</em></h3>
+          <p>Pecking Order:</p>
+          <ol>
+            <li>el (inline)</li>
+            <li>id
+              <ul>
+                <li>Don't style id's</li>
+              </ul>
+            </li>
+            <li>class
+              <ul>
+                <li>You can override classes with classes</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="sectionflex">
+          <h3>Git & Github</h3>
+          <p>There is a difference between "git" and "github".</p>
+          <p>Upload everything to Github. Shows progress and helps us get in habit.</p>
+          <h4>3 Commands:</h4>
+          <ol>
+            <li>Git add:
+              <ul>
+                <li>Adds untracked file(s) to an upcoming commit</li>
+                <li>You do not have to add 1:1. Just what you want to add for the next commit.</li>
+              </ul>
+            </li>
+            <li>Git commit
+              <ul>
+                <li>Will stage the changes that were made, and added, to be commited or logged.</li>
+              </ul>
+            </li>
+            <li>Git push
+              <ul>
+                <li>Commits are only local. You have to "push" commits, in order to, have them on a different system.</li>
+              </ul>
+            </li>
+          </ol>
+          <p>Git Log will show a history of all commits for a project. It, in theory, should show you the history/building blocks of the project.</p>
+          <p><b>Commit often!</b><em>You can't over-commit.</em></p>
+        </section>
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-four">Day 4</h1>
+      <div class="child">
+        <section class="sectionflex">
+          <h3>Flexbox</h3>
+          <h5><b>SUPER HELPFUL FOR FLEXBOX!</b></h5>
+          <p>Allows us to create responsive design. Knight in shining armor.</p>
+          <p>Practiced with Flexbox froggy.</p>
+        </section>
+        <section>
+          <h3>Git Branches</h3>
+          <ol><b>No more making changes on master!</b> <h5>You must: </h5>
+            <li>Changes go to branch</li>
+            <li>Push to branch</li>
+            <li>merge to master</li>
+            <li>Pull from master</li>
+          </ol>
+          <ol><h5>How to create a branch:</h5>
+            <li>Git checkout -b [filename] <em>---- name you want the branch to be</em></li>
+            <li>Git checkout [filename] <em>---- switches between branches you've made and the master.</em></li>
+            <li>Git push origin [filename] <em>---- name of branch</em></li>
+          </ol>
+          <ol><h5>Pulling a branch:</h5>
+            <li>Create a pull request.</li>
+            <li>Create message to your team that explains your actions.</li>
+          </ol>
+          <p>Different realities. Branch does not effect master until merged with master.</p>
+          <h5><b>DO NOT WRITE CODE ON MASTER.</b></h5>
+          <ol><h5>How to Delete Branch From Terminal:</h5>
+            <li>Get approval from <b>two</b> teammates in order to merge.</li>
+            <li>After merge. Delete branch from Github.</li>
+            <li>Git branch -D [filename] <em>---- Delete's branch from terminal</em></li>
+            <li>Git branch <em>---- see if the branch deleted</em></li>
+          </ol>
+          <p>Git pull origin master <em>---- pulls master branch from remote master and merges it to local master. They should both sync up.</em></p>
+          <ol><h5>How to Clone Repo:</h5>
+            <li>Go into directory where you would like the repo to clone. <em>---- you do not have to perform "Git init" because the git clone will pull down the .git file and will make the local git for you.</em></li>
+            <li>Make sure that you are in the directory where you want the clone to go. <b>NOT THE DIRECTORY WHERE YOU WANT THE FILES TO GO</b> <em>---- because the clone will pull in the whole directory.</em></li>
+            <li>Go into repo on github that you are clonig</li>
+            <li>Git clone [paste ssh key or url] <em>---- url or ssh key of rpo you are cloning</em></li>
+          </ol>
+          <p><b>Just because you make a change to an old pull request, does not mean you have to make a new pull request.</b></p>
+          <p>"Git merge master" <em>---- merges new master with branch.</em><br>(if there are lines that are unable to merge you will receive a conflict message.)</p>
+          <p>You can accept "Current Change"; "Incoming Change"; or "Bother Changes"</p>
+          <p><b>Merge Conflict</b><br>Happens when there is no baseline to compare branches</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-five">Day 5</h1>
+      <div class="child">
+        <section>
+          <h3>gitignore:</h3>
+            <ol>
+            <p>This should be one of the first files you add</p>
+            <p>Sometimes there are things that we do not want to push up in git. We want it to be ignored.</p>
+            <li>Create a ".gitignore" file in the root folder of the project. <em>---- touch .gitignore</em></li>
+            <li>add any files that you want to be ignored.</li>
+            <li>You can also ignore whole directories. Just add "[directory name]/".<br> If there is only one file that you want to ignore within a directory add "[directory name]/[filename]"</li>
+            <li>One line per ignore. <em>---- in the .gitignore file</em></li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Fetching</h3>
+          <ol><h5>Git Fetch --all:</h5>
+            <p>Will pull all the branches in a repo.</p>
+            <li><em>If you have to pull new updates to a branch</em> git pull origin [branch name]</li>
+            <p>Branches will be in the <em>.git</em> directory. Once you "checkout" into the branch, it will pull it out. <em>---- "git branch" command will not show list of branches until you have gone into the branch</em></p>
+            <li>After you fetch branches, go into the branch with <em>git checkout [branch name]</em></li>
+            <li>After you are done reviewing the branch <b>DO NOT</b> edit on that branch. <b>DON'T WRITE OR FIX SOMEONE ELSE'S CODE</b></li>
+            <li>Checkout to branch master</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Resolving Conflicts</h3>
+          <p>Ignore conlficts on git hub.<br> pull down master and merge/resolve conflict <b>LOCALLY</b></p>
+          <p>When git says "Origin/master" is up to date, that is not true because there is no space after <em>"/"</em></p>
+          <p>"Origin/master" is only the local master that you have cloned on your computer.</p>
+          <p>Pull the remote origin. Just to check if there are no changes that your local repo doesn't have. before pushing to the remote repo. </p>
+        </section>
+
+        <section>
+          <h3>Steve's Presentation</h3>
+          <p>Constantly learning</p>
+          <h5>Imposter Syndrome vs. Self Confidence</h5>
+          <p><b>Imposter Syndrom:</b><br><em>Why does everyone else seem to know more than I do?</em><br> Having a persistent beleif in your lack of skills and competence (especially when comparing to others). Being unable to internalize your success.</p>
+          <p><b>Types of Learners:</b></p>
+          <ul>
+            <li>Abstract</li>
+            <li>Concrete</li>
+            <li>Sequential</li>
+            <li>Random</li>
+          </ul>
+          <h5>Fixed Mindset vs. Growth Mindset</h5>
+          <ul><p>Fixed Mindset:</p>
+            <li><em>"I don't know."</em></li>
+            <li><p>Belief that abilities and talents are fixed at birth and cannot change. Sees any challenge as threat to self-image and rigid abilities.</p></li>
+          </ul>
+          <ul> <p>Growth Mindset:</p> 
+            <li><em>"I don't know, yet."</em></li>
+            <li><p>Every challenge is seen as a learning opportunity, and every talent can be grown through feedback, effort, and effective strategies.</p></li>
+            <li><p>Put away your ego, to learn.</p></li>
+          </ul>
+          <p>"We learn and grow through failure, not success."</p>
+          <ol>
+            <li>Hunger to get better everyday(<em>Mastery</em>)</li>
+            <li>Ability to communicate across tearms (<em>Empathy</em>)</li>
+            <li>Wants to solve problems that help people (<em>Purpose</em>)</li>
+            <li>Requires minimal management (<em>Autonomy</em>)</li>
+          </ol>
+          <p>No one mentioned <em>technical expertise</p></em></p>
+          <h5>What Makes A Good Team?</h5>
+          <p>Not who is on the team, but the culture of the team</p>
+          <ul>
+            <li>Phsychological Safete (<em>a.k.a Trust</em>)</li>
+            <li>Dependability</li>
+            <li>Structure & Clearity</li>
+            <li>Purpose</li>
+            <li>Impact</li>
+          </ul>
+          <h5><b>How We Play The Game</b></h5>
+          <p><b>Interviewing</b></p>
+          <p>Men apply for a job when they meet only 60% of the qualifications</p>
+          <p>Women apply for a job when they meet 100% of the qualifications</p>
+          <p>Boys do not pursue STEM activities at a higher rate than girls do because they are better at it.<br> They do so because they <em><b>think</b></em> they are better at it.</p>
+          <p><b>What Cause The Change??</b></p>
+          <p>The consumerization of computers (and unconscious bias in the 1980s)</p>
+        </section>
+        <section>
+          <h3>Ashley Presentation</h3>
+          <h5>Final Demo Day</h5>
+          <p>Show off your projects<br> Meet with potential employers.</p>
+          <h5>Before Graduating</h5>
+          <ul>
+            <li>Create LinkedIn prfile and develop a network of meaningful connections</li>
+            <li>Create a journal that will capture what you learn at NSS and talking specifically about your projects. Will also be reflected on your LinkidIn</li>
+            <li>Build technical resume</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h5>Workshops</h5>
+          <ul>
+            <li>Networking Talk</li>
+            <li>Building LinkedIn</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h5>Job Search Update</h5>
+          <p>www.huntr.co</p>
+          <h5>John Talks</h5>
+          <h5>Advice From the Community</h5>
+          <p><b>Mandatory Event</b></p>
+          <p><em>Thursday, Aug 8th<br> 6:00 - 8:00 pm</em></p>
+          <h5>Mock Interview Event</h5>
+          <p>Sept 19th 2019 - 4:30 pm - 8:00 pm</p>
+          <p>With Senior/Lead Developers and Technology leaders in the Nashville area.</p>
+          <h5>Career Dev. 1/1's</h5>
+          <p>1/1's will begin Aug 28-29th</p>
+          <h5>Professional Headshot</h5>
+          <p>September 3rd, 2019</p>
+
+        </section>
+      </div>
+    </article>
+<!--                        
+  
+  Week 2                                              
+
+ -->
+    <article class="">
+      <h1 id="d-six">Day Six</h1>
+      <div class="child">
+        <section>
+          <p>Researching and asking questions is big part of job. Especially as junior developer.</p>
+          <h3>Where to Go to Research Things</h3>
+          <ul>
+            <li><a href="https://javascriptweekly.com/" target="blank">Javascript Weekly</a></li>
+            <li><a href="https://medium.com/" target="blank">Medium Daily Digest</a></li>
+            <li><a href="https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603">https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603</a></li>
+            <li><a href="https://css-tricks.com/" target="blank">css tricks</a></li>
+            <li><a href="https://github.com/getify/You-Dont-Know-JS/" target="blank">You Don't Know Javascript - Kyle Simpson</a></li>
+          </ul>
+          <h3>Research Tips</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/" target="blank">mdn</a></li>
+            <li><a href="https://stackoverflow.com/" target="blank">Stack Overflow</a></li>
+          </ul>
+          <h3>YouTube</h3>
+          <ul>
+            <li>Fun fun function</li>
+            <li>Wes Bos</li>
+            <li></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Asking Bad Questions</h3>
+          <p><a href="https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603" target="blank">Article Link</a></p>
+          <p>If you get an error. Copy and paster the error into google and research it.</p>
+          <p>When asking for help, let the Jr. Instructor/Instructor know what you have already tried.</p>
+        </section>
+
+        <section>
+          <h3>Group Work</h3>
+          <p>Everyone needs to make a contribution. The more even the contribution the better.</p>
+          <p>Always try to be a helping hand.</p>
+          <p>Don't treat pull requests like they're nothing. Don't try to pressure team members to look at your pull request right away.</p>
+          <p>PLAN</p>
+          <p>Communicate goals and structure.</p>
+          <p>Over-communicate</p>
+
+        </section>
+      </div>
+    </article>
+    
+      <article class="">
+          <h1 id="d-seven">Day Seven</h1>
+          <div class="child">
+            <section>
+              <p>Worked on Celebrity Tribute with group.</p>
+              <p>Having a hard time with getting flex to work.</p>
+            </section>
+          </div>
+      </article>
+      
+      <article class="">
+        <h1 id="d-eight">Day Eight</h1>
+        <div class="child">
+          <p>Presented Celebrity Projects.</p>
+          <figure>
+            <img src="img/flowchart-yes.JPG" alt="flow chart for using git and github" class="img-size">
+            <img src="img/flowchart-no.JPG" alt="flow chart for using git and github" class="img-size">
+          </figure>
+          <p>Make yourself a desirable candidate for employees.</p>
+          <h3>Git stash</h3>
+          <p>allows you to not have to commit changes. Stashes them in an array. </p>
+          <p>You can use it to take things off a branch and put them back on the same branch.
+            Or you can stash it and move it to another branch.</p>
+          <ol>
+            <li>git stash</li>
+            <li>git checkout [branch name]</li>
+            <li>git stash pop <em>Will take stashed changes and put them on branch.</em></li>
+          </ol>
+          <p>You should be able to describe your commit in one short sentence</p>
+          <h3>-p</h3>
+          <p>Allows you to more specfically choose what youd like to commit.</p>
+          <ol>
+            <li>git add -p</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
+      </article>
+
+
+      <fieldset>
+        <a href="#top">Top</a>
+      </fieldset>
+      
+      <hr>
+
+      <footer class="footer">
+        <a href="#top">Top</a>
+      </footer>
+  </body>
+</html>
